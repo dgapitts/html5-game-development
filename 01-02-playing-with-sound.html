@@ -1,0 +1,20 @@
+<html>
+
+<head>
+<title>01-02-playing-with-sound</title>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script>
+  function loadSound() {
+    createjs.Sound.registerSound("cup-hit.wav", "hit");
+  }
+  function playSound() {
+    createjs.Sound.play("hit");
+  }
+</script>
+
+</head>
+
+<body onload="loadSound();">
+  <button onclick="playSound();">Play Sound</button>
+</body>
+</html>
